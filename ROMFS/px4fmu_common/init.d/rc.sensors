@@ -147,6 +147,12 @@ then
 	fi
 fi
 
+# probe for optional external SPI devices
+if param compare SENS_EXT_SPI_PRB 1
+then
+	rm3100 -s -S -q start
+fi
+
 ###############################################################################
 #                            End Optional drivers                             #
 ###############################################################################

@@ -211,6 +211,17 @@ PARAM_DEFINE_INT32(SENS_EN_THERMAL, -1);
 PARAM_DEFINE_INT32(SENS_EXT_I2C_PRB, 1);
 
 /**
+ * External SPI probe.
+ *
+ * Probe for optional external SPI devices.
+ *
+ * @boolean
+ * @category system
+ * @group Sensors
+ */
+PARAM_DEFINE_INT32(SENS_EXT_SPI_PRB, 1);
+
+/**
  * Sensors hub IMU mode
  *
  * @value 0 Disabled
